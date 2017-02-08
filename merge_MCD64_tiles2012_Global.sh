@@ -42,9 +42,9 @@ do
 	echo ${composite[$compo]}
 	for pattern in $patterns_globe
 	do		
-		#cp $rundir/$year/${composite[$compo]}/$product$year${composite[$compo]}.${pattern}*.hdf $out_dir
-		cp $rundir/$year/${composite[$compo]}/$product$year${composite[$compo]}.${pattern}*.hdf $out_dir
-		#cp $rundir/${pattern}/$product$year${composite[$compo]}.${pattern}*.hdf $out_dir
+		cp $rundir/$year/${composite[$compo]}/$product$year${composite[$compo]}.${pattern}*.hdf $out_dir # new file structure in C6
+		#cp $rundir/${pattern}/$product$year${composite[$compo]}.${pattern}*.hdf $out_dir # the old file structure from C5
+
 	done
 
 	ficheiros=`ls *.hdf`
